@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Hosted Game site](https://your-live-site-url.com)
+- Live Site URL: [Hosted Game site]https://dennardavid.github.io/rock-paper-scissors/)
 
 ## My process
 
