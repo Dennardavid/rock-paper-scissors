@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      text="text/css"
+      media="screen and (min-width:701px)"
+      href="desktop.css"
+    />
+    <link
+      rel="stylesheet"
+      text="text/css"
+      media="screen and (max-width:700px)"
+      href="mobile.css"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header id="header">
+      <div>
+        <img src="images/logo.svg" alt="rock Paper Scissors" />
+      </div>
+      <div id="score-board">
+        <p>SCORE</p>
+        <h2 id="myScore">0</h2>
+      </div>
+    </header>
+    
+    <main id="landing">
+      <!-- Area for selecting paper -->
+      <div id="paper-outer" class="hand" onclick="userChoice('paper')">
+        <div id="paper-circle">
+          <img src="images/icon-paper.svg" alt="Paper" id="paper" />
+        </div>
+      </div>
+
+      <!-- Area for selecting scissors -->
+      <div id="scissors-outer" class="hand" onclick="userChoice('scissors')">
+        <div id="scissors-circle">
+          <img src="images/icon-scissors.svg" alt="Scissors" />
+        </div>
+      </div>
+
+      <!-- Area for selecting rock -->
+      <div id="rock-outer" class="hand" onclick="userChoice('rock')">
+        <div id="rock-circle">
+          <img src="images/icon-rock.svg" alt="Rock" />
+        </div>
+      </div>
+    </main>
+
+    <div id="results">
+      <!-- this is what the user chose -->
+      <div class="userchoice" >
+        <h3 class="results-heading">you picked</h3>
+        <div id="the-results">
+          <div id="mychoice-outer" class="hand" >
+            <div id="mychoice-circle">
+              <img src="" alt="" id="myImage" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is the display of who won -->
+      <div class="win-lose">
+        <h1 id="winner">YOU WIN</h1>
+        <button id="playagain" onclick="playAgain()">PLAY AGAIN</button>
+      </div>
+
+      <!-- this is what the computer chose -->
+      <div class="computerchoice">
+        <h3 class="results-heading">the house picked</h2>
+        <div id="the-results">
+          <div id="compchoice-outer" class="hand" >
+            <div id="compchoice-circle">
+              <img src="" alt="" id="compImage" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules button -->
+    <section>
+      <button id="section" onclick="rules()">
+        <h4>RULES</h4>
+      </button>
+    </section>
+
+    <!-- modal to show rules -->
+    <div id="modal">
+      <div id="rules">
+        <div>
+          <h2>RULES</h2>
+        </div>
+        <div>
+          <img
+            src="images/icon-close.svg"
+            alt="close"
+            id="cancel"
+            onclick="closeModal()"
+          />
+        </div>
+        <div>
+          <img src="images/image-rules.svg" alt="rules" id="rule-pic" />
+        </div>
+      </div>
+    </div>
+
+    <div id="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Dennar David</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
