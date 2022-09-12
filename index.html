@@ -17,32 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      text="text/css"
-      media="screen and (min-width:701px)"
-      href="desktop.css"
-    />
-    <link
-      rel="stylesheet"
-      text="text/css"
-      media="screen and (max-width:700px)"
-      href="mobile.css"
-    />
-
+    <link rel="stylesheet" text="text/css" href="desktop.css" />
+    
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
     <header id="header">
       <div>
-        <img src="images/logo.svg" alt="rock Paper Scissors" />
+        <img src="images/logo.svg" alt="rock Paper Scissors" id="logo" />
       </div>
       <div id="score-board">
         <p>SCORE</p>
         <h2 id="myScore">0</h2>
       </div>
     </header>
-    
+
     <main id="landing">
       <!-- Area for selecting paper -->
       <div id="paper-outer" class="hand" onclick="userChoice('paper')">
@@ -68,10 +57,10 @@
 
     <div id="results">
       <!-- this is what the user chose -->
-      <div class="userchoice" >
+      <div class="userchoice">
         <h3 class="results-heading">you picked</h3>
         <div id="the-results">
-          <div id="mychoice-outer" class="hand" >
+          <div id="mychoice-outer" class="hand">
             <div id="mychoice-circle">
               <img src="" alt="" id="myImage" />
             </div>
@@ -80,16 +69,18 @@
       </div>
 
       <!-- this is the display of who won -->
-      <div class="win-lose">
-        <h1 id="winner">YOU WIN</h1>
-        <button id="playagain" onclick="playAgain()">PLAY AGAIN</button>
+      <div>
+        <div id="win-lose">
+          <h1 id="winner">YOU WIN</h1>
+          <button id="playagain" onclick="playAgain()">PLAY AGAIN</button>
+        </div>
       </div>
 
       <!-- this is what the computer chose -->
       <div class="computerchoice">
-        <h3 class="results-heading">the house picked</h2>
+        <h3 class="results-heading">the house picked</h3>
         <div id="the-results">
-          <div id="compchoice-outer" class="hand" >
+          <div id="compchoice-outer" class="hand">
             <div id="compchoice-circle">
               <img src="" alt="" id="compImage" />
             </div>
@@ -112,6 +103,9 @@
           <h2>RULES</h2>
         </div>
         <div>
+          <img src="images/image-rules.svg" alt="rules" id="rule-pic" />
+        </div>
+        <div>
           <img
             src="images/icon-close.svg"
             alt="close"
@@ -119,17 +113,16 @@
             onclick="closeModal()"
           />
         </div>
-        <div>
-          <img src="images/image-rules.svg" alt="rules" id="rule-pic" />
-        </div>
       </div>
     </div>
 
     <div id="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.twitter.com/double_dstwitts" target="_blank">Dennar David</a>.
+      <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.twitter.com/double_dstwitts" target="_blank"
+        >Dennar David</a
+      >.
     </div>
     <script src="script.js"></script>
   </body>
